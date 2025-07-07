@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|c:\\users\\isaia\\source\\repos\\ejercicios\\web api ejercicios\\gestorproductosapi\\gestorproductosapi\\wwwroot\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|solutionrelative:gestorproductosapi\\wwwroot\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|c:\\users\\isaia\\source\\repos\\ejercicios\\web api ejercicios\\gestorproductosapi\\gestorproductosapi\\wwwroot\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|solutionrelative:gestorproductosapi\\wwwroot\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|c:\\users\\isaia\\source\\repos\\ejercicios\\web api ejercicios\\gestorproductosapi\\gestorproductosapi\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|solutionrelative:gestorproductosapi\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|c:\\users\\isaia\\source\\repos\\ejercicios\\web api ejercicios\\gestorproductosapi\\gestorproductosapi\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|solutionrelative:gestorproductosapi\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|c:\\users\\isaia\\source\\repos\\ejercicios\\web api ejercicios\\gestorproductosapi\\gestorproductosapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|solutionrelative:gestorproductosapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|c:\\users\\isaia\\source\\repos\\ejercicios\\web api ejercicios\\gestorproductosapi\\gestorproductosapi\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|solutionrelative:gestorproductosapi\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|c:\\users\\isaia\\source\\repos\\ejercicios\\web api ejercicios\\gestorproductosapi\\gestorproductosapi\\models\\pruebacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|solutionrelative:gestorproductosapi\\models\\pruebacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|c:\\users\\isaia\\source\\repos\\ejercicios\\web api ejercicios\\gestorproductosapi\\gestorproductosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|solutionrelative:gestorproductosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|c:\\users\\isaia\\source\\repos\\ejercicios\\web api ejercicios\\gestorproductosapi\\gestorproductosapi\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD3BC02C-3AE9-4BE4-8C6E-E25F4858F948}|GestorProductosApi\\GestorProductosApi.csproj|solutionrelative:gestorproductosapi\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\wwwroot\\style.css",
+              "RelativeDocumentMoniker": "GestorProductosApi\\wwwroot\\style.css",
+              "ToolTip": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\wwwroot\\style.css",
+              "RelativeToolTip": "GestorProductosApi\\wwwroot\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-07T19:37:20.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "GestorProductosApi\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\wwwroot\\index.html",
+              "RelativeToolTip": "GestorProductosApi\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-07T19:24:59.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\wwwroot\\script.js",
+              "RelativeDocumentMoniker": "GestorProductosApi\\wwwroot\\script.js",
+              "ToolTip": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\wwwroot\\script.js",
+              "RelativeToolTip": "GestorProductosApi\\wwwroot\\script.js",
+              "ViewState": "AgIAACQAAAAAAAAAAAAIwDMAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-07T19:17:54.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "GestorProductosApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "GestorProductosApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-07T19:10:43.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "GestorProductosApi\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\Models\\Producto.cs",
+              "RelativeToolTip": "GestorProductosApi\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:28:21.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PruebaContext.cs",
+              "DocumentMoniker": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\Models\\PruebaContext.cs",
+              "RelativeDocumentMoniker": "GestorProductosApi\\Models\\PruebaContext.cs",
+              "ToolTip": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\Models\\PruebaContext.cs",
+              "RelativeToolTip": "GestorProductosApi\\Models\\PruebaContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:11:07.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\Program.cs",
+              "RelativeDocumentMoniker": "GestorProductosApi\\Program.cs",
+              "ToolTip": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\Program.cs",
+              "RelativeToolTip": "GestorProductosApi\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T22:33:40.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductoService.cs",
+              "DocumentMoniker": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\Services\\ProductoService.cs",
+              "RelativeDocumentMoniker": "GestorProductosApi\\Services\\ProductoService.cs",
+              "ToolTip": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\Services\\ProductoService.cs",
+              "RelativeToolTip": "GestorProductosApi\\Services\\ProductoService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBIAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T22:33:15.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "GestorProductosApi\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\isaia\\source\\repos\\Ejercicios\\Web API Ejercicios\\GestorProductosApi\\GestorProductosApi\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "GestorProductosApi\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAowDgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T22:35:20.4Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
