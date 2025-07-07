@@ -1,21 +1,24 @@
-﻿const API_URL = 'https://localhost:7232/api/productos'; 
+﻿// URL base de la API
+const API_URL = 'https://localhost:7232/api/productos';
 
+// Referencia a la fila que se está editando
 let filaResaltada = null;
 
+// Evento principal: se ejecuta cuando el DOM esté cargado
 document.addEventListener("DOMContentLoaded", () => {
     cargarProductos();
-
     document.getElementById('formProducto').addEventListener('submit', guardarProducto);
     document.getElementById('btnLimpiar').addEventListener('click', limpiarFormulario);
 });
 
-// Cargar y mostrar productos
+// Función para obtener y mostrar los productos en la tabla
 async function cargarProductos() {
     try {
         const res = await fetch(API_URL);
         const productos = await res.json();
         const tabla = document.getElementById('tablaProductos');
-        tabla.innerHTML = '';
+        tabla.innerHTML = ''; // Limpiar tabla
+
         productos.forEach(p => {
             const fila = document.createElement('tr');
             fila.innerHTML = `
@@ -35,7 +38,7 @@ async function cargarProductos() {
     }
 }
 
-// Guardar o editar producto
+// Función para guardar o actualizar un producto
 async function guardarProducto(e) {
     e.preventDefault();
 
@@ -48,6 +51,7 @@ async function guardarProducto(e) {
         return;
     }
 
+    // Ajustar la fecha de creación a hora local ISO
     const ahora = new Date();
     const fechaLocalIso = new Date(ahora.getTime() - ahora.getTimezoneOffset() * 60000).toISOString();
 
@@ -59,6 +63,7 @@ async function guardarProducto(e) {
 
     try {
         if (id) {
+            // Actualizar producto existente (PUT)
             await fetch(`${API_URL}/${id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
@@ -66,6 +71,7 @@ async function guardarProducto(e) {
             });
             mostrarMensaje('Producto actualizado correctamente.');
         } else {
+            // Crear nuevo producto (POST)
             await fetch(API_URL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -82,7 +88,7 @@ async function guardarProducto(e) {
     }
 }
 
-// Editar producto
+// Función para cargar un producto en el formulario y resaltarlo
 async function editarProducto(id, boton) {
     try {
         const res = await fetch(`${API_URL}/${id}`);
@@ -91,7 +97,7 @@ async function editarProducto(id, boton) {
         document.getElementById('nombre').value = producto.nombre;
         document.getElementById('precio').value = producto.precio;
 
-        // Resaltar fila
+        // Resaltar la fila correspondiente
         if (filaResaltada) filaResaltada.classList.remove('resaltado');
         const fila = boton.closest('tr');
         fila.classList.add('resaltado');
@@ -102,7 +108,7 @@ async function editarProducto(id, boton) {
     }
 }
 
-// Eliminar producto
+// Función para eliminar un producto
 async function eliminarProducto(id) {
     if (!confirm('¿Seguro que deseas eliminar este producto?')) return;
     try {
@@ -115,7 +121,7 @@ async function eliminarProducto(id) {
     }
 }
 
-// Limpiar formulario
+// Función para limpiar el formulario y quitar resaltado
 function limpiarFormulario() {
     document.getElementById('producto_id').value = '';
     document.getElementById('formProducto').reset();
@@ -123,7 +129,7 @@ function limpiarFormulario() {
     filaResaltada = null;
 }
 
-// Mostrar mensajes
+// Función para mostrar mensajes temporales (éxito o error)
 function mostrarMensaje(texto, esError = false) {
     const mensaje = document.getElementById('mensaje');
     mensaje.textContent = texto;
@@ -131,7 +137,9 @@ function mostrarMensaje(texto, esError = false) {
     mensaje.classList.add('exito');
     mensaje.style.display = 'block';
 
+    // Ocultar mensaje después de 3 segundos
     setTimeout(() => {
         mensaje.style.display = 'none';
     }, 3000);
 }
+

@@ -13,7 +13,7 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "launchUrl": "index.html",
+      "launchUrl": "index.html", // Cambio de swagger a index.html
       "applicationUrl": "http://localhost:5138",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
@@ -23,7 +23,7 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "launchUrl": "index.html",
+      "launchUrl": "index.html", // Cambio de swagger a index.html
       "applicationUrl": "https://localhost:7232;http://localhost:5138",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
@@ -32,7 +32,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "index.html",
+      "launchUrl": "index.html", // Cambio de swagger a index.html
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
