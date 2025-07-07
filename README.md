@@ -57,13 +57,13 @@ dotnet run
 
 Esto iniciará el servidor en una dirección como:
 
-https://localhost:7034
+https://localhost:7232
 
 ### 5. Usar la aplicación web
 
 Abre tu navegador y visita:
 
-https://localhost:7034/wwwroot/index.html
+https://localhost:7232/wwwroot/index.html
 
 Desde allí podrás:
 
