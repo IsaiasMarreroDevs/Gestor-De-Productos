@@ -1,0 +1,19 @@
+# Archivos y carpetas generados automáticamente por Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.log
+*.cache
+
+# Archivos de configuración local
+*.dbmdl
+*.pdb
+*.vscode/
+
+# Configuración de entorno y temporales
+.env
+
+# Node modules si usas JavaScript
+node_modules/
