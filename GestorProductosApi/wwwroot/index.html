@@ -3,28 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Gestor de Productos</title>
+    <!-- Enlace al CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Título principal -->
+    <!-- Título principal de la aplicación -->
     <h1>Gestor de Productos</h1>
 
-    <!-- Contenedor para mostrar mensajes (éxito o error) -->
+    <!-- Contenedor para mostrar mensajes de éxito o error -->
     <div id="mensaje" class="oculto"></div>
 
     <!-- Formulario para registrar o editar productos -->
     <section>
         <form id="formProducto">
+            <!-- Campo oculto para almacenar el ID del producto (en caso de edición) -->
             <input type="hidden" id="producto_id">
+
+            <!-- Campo para el nombre del producto -->
             <input type="text" id="nombre" placeholder="Nombre del producto" required>
+
+            <!-- Campo para el precio (admite decimales) -->
             <input type="number" step="0.01" id="precio" placeholder="Precio" required>
+
+            <!-- Botón para guardar (crear o actualizar) -->
             <button type="submit">Guardar</button>
+
+            <!-- Botón para limpiar el formulario -->
             <button type="button" id="btnLimpiar">Limpiar</button>
         </form>
     </section>
 
-    <!-- Tabla para mostrar los productos existentes -->
+    <!-- Tabla que mostrará la lista de productos desde la base de datos -->
     <section>
         <h2>Lista de Productos</h2>
         <table>
@@ -37,12 +47,14 @@
                     <th>Acciones</th>
                 </tr>
             </thead>
+            <!-- El cuerpo de la tabla se llenará dinámicamente con JavaScript -->
             <tbody id="tablaProductos"></tbody>
         </table>
     </section>
 
-    <!-- Script principal -->
+    <!-- Enlace al script JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
+
 

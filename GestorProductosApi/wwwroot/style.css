@@ -1,4 +1,4 @@
-﻿/* Estilo base del cuerpo */
+﻿/* Estilos generales del cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -6,14 +6,14 @@ body {
     margin: 20px;
 }
 
-/* Encabezado principal */
+/* Título principal centrado */
 h1 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-/* Estilos generales del formulario */
+/* Diseño del formulario */
 form {
     margin-bottom: 20px;
     display: flex;
@@ -22,7 +22,7 @@ form {
     justify-content: center;
 }
 
-/* Campos de texto y número */
+/* Campos de entrada para nombre y precio */
 input[type="text"],
 input[type="number"] {
     padding: 10px;
@@ -32,7 +32,7 @@ input[type="number"] {
     width: 200px;
 }
 
-/* Estilos comunes para todos los botones */
+/* Botones del formulario */
 button {
     padding: 10px 16px;
     font-size: 1rem;
@@ -42,7 +42,7 @@ button {
     transition: background-color 0.2s ease;
 }
 
-    /* Botón de guardar (submit) */
+    /* Botón guardar (verde) */
     button[type="submit"] {
         background-color: #28a745;
         color: white;
@@ -52,7 +52,7 @@ button {
             background-color: #218838;
         }
 
-/* Botón de limpiar */
+/* Botón limpiar (gris) */
 #btnLimpiar {
     background-color: #6c757d;
     color: white;
@@ -62,7 +62,7 @@ button {
         background-color: #5a6268;
     }
 
-/* Tabla de productos */
+/* Estilo de la tabla de productos */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -76,28 +76,28 @@ th, td {
     text-align: left;
 }
 
-/* Encabezado de tabla */
+/* Encabezado de tabla con fondo azul */
 thead {
     background-color: #007bff;
     color: white;
 }
 
-/* Resaltado de fila al pasar el cursor */
+/* Efecto hover en filas de tabla */
 tr:hover {
     background-color: #f1f3f5;
 }
 
-/* Espaciado entre botones en la tabla */
+/* Espaciado entre botones dentro de la tabla */
 button + button {
     margin-left: 5px;
 }
 
-/* Estilo para la fila actualmente en edición */
+/* Fila resaltada al editar */
 .resaltado {
     background-color: #fff3cd !important;
 }
 
-/* Mensaje de éxito o error */
+/* Mensajes de alerta */
 #mensaje {
     padding: 12px 20px;
     margin: 0 auto 20px auto;
@@ -108,12 +108,14 @@ button + button {
     display: none;
 }
 
+    /* Éxito: fondo verde claro */
     #mensaje.exito {
         background-color: #d4edda;
         color: #155724;
         border: 1px solid #c3e6cb;
     }
 
+    /* Error: fondo rojo claro */
     #mensaje.error {
         background-color: #f8d7da;
         color: #721c24;

@@ -1,25 +1,26 @@
-﻿// URL base de la API
+﻿// URL base de la API REST que expone el backend ASP.NET Core
 const API_URL = 'https://localhost:7232/api/productos';
 
-// Referencia a la fila que se está editando
+// Variable global para guardar la fila actualmente resaltada (cuando se edita un producto)
 let filaResaltada = null;
 
-// Evento principal: se ejecuta cuando el DOM esté cargado
+// Evento que se ejecuta cuando todo el contenido del DOM ha cargado
 document.addEventListener("DOMContentLoaded", () => {
-    cargarProductos();
+    cargarProductos(); // Obtener y mostrar productos al cargar la página
     document.getElementById('formProducto').addEventListener('submit', guardarProducto);
     document.getElementById('btnLimpiar').addEventListener('click', limpiarFormulario);
 });
 
-// Función para obtener y mostrar los productos en la tabla
+// Función asincrónica que obtiene los productos de la API y los muestra en la tabla
 async function cargarProductos() {
     try {
-        const res = await fetch(API_URL);
-        const productos = await res.json();
+        const res = await fetch(API_URL); // Realiza solicitud GET a la API
+        const productos = await res.json(); // Convierte la respuesta a JSON
         const tabla = document.getElementById('tablaProductos');
-        tabla.innerHTML = ''; // Limpiar tabla
+        tabla.innerHTML = ''; // Limpia la tabla antes de llenarla
 
         productos.forEach(p => {
+            // Crea una nueva fila para cada producto
             const fila = document.createElement('tr');
             fila.innerHTML = `
                 <td>${p.productoId}</td>
@@ -31,27 +32,28 @@ async function cargarProductos() {
                     <button onclick="eliminarProducto(${p.productoId})">Eliminar</button>
                 </td>
             `;
-            tabla.appendChild(fila);
+            tabla.appendChild(fila); // Añade la fila a la tabla
         });
     } catch (error) {
         console.error("Error cargando productos:", error);
     }
 }
 
-// Función para guardar o actualizar un producto
+// Función que guarda un nuevo producto o actualiza uno existente
 async function guardarProducto(e) {
-    e.preventDefault();
+    e.preventDefault(); // Previene el comportamiento por defecto del formulario
 
     const id = document.getElementById('producto_id').value;
     const nombre = document.getElementById('nombre').value;
     const precio = parseFloat(document.getElementById('precio').value);
 
+    // Validación básica: no permitir precios negativos
     if (precio < 0) {
         mostrarMensaje('El precio no puede ser negativo.', true);
         return;
     }
 
-    // Ajustar la fecha de creación a hora local ISO
+    // Genera la fecha actual en formato ISO 
     const ahora = new Date();
     const fechaLocalIso = new Date(ahora.getTime() - ahora.getTimezoneOffset() * 60000).toISOString();
 
@@ -63,7 +65,7 @@ async function guardarProducto(e) {
 
     try {
         if (id) {
-            // Actualizar producto existente (PUT)
+            // Si hay ID, se actualiza (PUT)
             await fetch(`${API_URL}/${id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
@@ -71,7 +73,7 @@ async function guardarProducto(e) {
             });
             mostrarMensaje('Producto actualizado correctamente.');
         } else {
-            // Crear nuevo producto (POST)
+            // Si no hay ID, se crea un nuevo producto (POST)
             await fetch(API_URL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -81,23 +83,24 @@ async function guardarProducto(e) {
         }
 
         limpiarFormulario();
-        cargarProductos();
+        cargarProductos(); // Recarga la tabla
     } catch (error) {
         console.error("Error guardando producto:", error);
         mostrarMensaje('Error al guardar el producto.', true);
     }
 }
 
-// Función para cargar un producto en el formulario y resaltarlo
+// Función que obtiene un producto específico y lo carga en el formulario
 async function editarProducto(id, boton) {
     try {
         const res = await fetch(`${API_URL}/${id}`);
         const producto = await res.json();
+
         document.getElementById('producto_id').value = producto.productoId;
         document.getElementById('nombre').value = producto.nombre;
         document.getElementById('precio').value = producto.precio;
 
-        // Resaltar la fila correspondiente
+        // Resalta la fila seleccionada para indicar que está en modo edición
         if (filaResaltada) filaResaltada.classList.remove('resaltado');
         const fila = boton.closest('tr');
         fila.classList.add('resaltado');
@@ -108,20 +111,20 @@ async function editarProducto(id, boton) {
     }
 }
 
-// Función para eliminar un producto
+// Función que elimina un producto
 async function eliminarProducto(id) {
     if (!confirm('¿Seguro que deseas eliminar este producto?')) return;
     try {
         await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
         mostrarMensaje('Producto eliminado correctamente.');
-        cargarProductos();
+        cargarProductos(); // Recarga la tabla
     } catch (error) {
         console.error("Error eliminando producto:", error);
         mostrarMensaje('Error al eliminar el producto.', true);
     }
 }
 
-// Función para limpiar el formulario y quitar resaltado
+// Limpia el formulario y remueve resaltado de fila si la hay
 function limpiarFormulario() {
     document.getElementById('producto_id').value = '';
     document.getElementById('formProducto').reset();
@@ -129,17 +132,17 @@ function limpiarFormulario() {
     filaResaltada = null;
 }
 
-// Función para mostrar mensajes temporales (éxito o error)
+// Muestra mensajes de estado (éxito o error) en pantalla de forma temporal
 function mostrarMensaje(texto, esError = false) {
     const mensaje = document.getElementById('mensaje');
     mensaje.textContent = texto;
     mensaje.className = esError ? 'error' : 'exito';
-    mensaje.classList.add('exito');
     mensaje.style.display = 'block';
 
-    // Ocultar mensaje después de 3 segundos
+    // Oculta el mensaje después de 3 segundos
     setTimeout(() => {
         mensaje.style.display = 'none';
     }, 3000);
 }
+
 
